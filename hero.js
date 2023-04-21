@@ -26,10 +26,6 @@ class SuperVillain extends SuperHuman {
   }
 }
 
-// Define SuperHero and SuperVillain classes here
-
-
-
 const heroes = {
 	"Super Bacon": new SuperHero("Jack Oinker", "Super Bacon", 2),
 	"Flat-Man": new SuperHero("Peter Pranker", "Flat-Man", 5),
@@ -46,9 +42,7 @@ const villains = {
 
 registerHandlers();
 
-function registerHandlers() {
-	// Detect selection of hero and villain
-	document.querySelector("#heroSelect").addEventListener("change", selectionChanged);
+function registerHandlers() {	document.querySelector("#heroSelect").addEventListener("change", selectionChanged);
 	document.querySelector("#villainSelect").addEventListener("change", selectionChanged);
 
 	selectionChanged();
